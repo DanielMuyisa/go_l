@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const rdUser: Function = () => {
 
@@ -10,7 +10,7 @@ function Main(props) {
   )
 }
 
-// Main.propTypes = {}
+Main.propTypes = {}
 
 export default Main
 
