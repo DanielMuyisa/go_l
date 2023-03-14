@@ -1,11 +1,7 @@
+const arr = [1,2,3]
+arr.push(2)
 
-import React from 'react'
+// prevent comming number
+let head: number = arr[0]
 
-export default function simp() {
-    function fx() {
-        const arr = [1,2,3]
-        arr.push(2)
-        console.log(arr);
-    }
-    return fx()
-}
+console.log(head);
