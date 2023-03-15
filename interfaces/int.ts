@@ -32,3 +32,28 @@ const setSize: Rectangle = {
 console.log("----- Inheritance interface --------");
 console.log(setSize);
 
+
+
+// aliases
+type carYear = number
+type carName = string
+type carStatus = boolean
+type Car = {
+    year: carYear,
+    name: carName,
+    status_car: carStatus
+}
+
+const myCar: Car = {
+    name: "LAND CUISER",
+    year: 2010,
+    status_car: true 
+}
+
+console.log("=======================");
+
+console.log(
+    "name: "+myCar.name+"\n",
+    "Year: "+myCar.name+"\n",
+    "status: "+myCar.name+"\n"
+);
