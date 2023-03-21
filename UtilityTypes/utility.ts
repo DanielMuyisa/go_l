@@ -52,3 +52,28 @@ const Rm: Pick<Auth, 'mail'> = {
      mail: 'ftp@mail.ia'
 } 
 console.log(Rm.mail);
+
+
+
+// remove type from a union
+console.log('---- Exclude -----\n\n');
+type Manage = string | number | boolean
+const value: Exclude<Manage, boolean> = 0
+console.log(value);
+
+
+
+
+
+type PointGenerator = () => {
+    note: number,
+    mention: string
+}
+// ReturnType
+const point: Partial<ReturnType<PointGenerator>> = {
+    note: 2,
+    mention: "Great"
+}
+console.log(point);
+
+// ReturnType in a array
